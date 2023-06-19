@@ -1,17 +1,12 @@
-"use client";
-
 import Head from 'next/head'
-import { BsMoonStarsFill } from 'react-icons/bs';
 import { AiFillLinkedin } from 'react-icons/ai';
-
-
 import InfoSec from './components/infoSection'
 import TechStack from './components/techStack'
 import TechStackOther from './components/techStackOthers'
 import NavegationBar from './components/navBar'
 import Experience from './components/experience'
 import AboutMe from './components/aboutMe'
-import { BrowserRouter } from 'react-router-dom';
+
 
 function Home() {
 
