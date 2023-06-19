@@ -1,5 +1,5 @@
 {
-  "homepage": "https://ZampaGMUJICA.github.io/Web-Portfolio/",
+  "homepage": "http://ZampaGMUJICA.github.io/Web-Portfolio/",
   "name": "web-porfolio-zampaglione",
   "version": "0.1.0",
   "private": true,
@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d .next"
   },
   "dependencies": {
     "@types/node": "20.3.0",
