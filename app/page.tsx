@@ -4,7 +4,7 @@ import Head from 'next/head'
 import { BsMoonStarsFill } from 'react-icons/bs';
 import { AiFillLinkedin } from 'react-icons/ai';
 
-import { useState } from "react";
+
 import InfoSec from './components/infoSection'
 import TechStack from './components/techStack'
 import TechStackOther from './components/techStackOthers'
@@ -14,10 +14,10 @@ import AboutMe from './components/aboutMe'
 import { BrowserRouter } from 'react-router-dom';
 
 function Home() {
-  const [darkMode, setDarkMode] = useState(false)
+
   return (
-    <BrowserRouter>
-      <div className={darkMode ? "dark" : ""}>
+
+      <div>
         <Head>
           <title>Gaston Zampaglione</title>
         </Head>
@@ -26,7 +26,7 @@ function Home() {
             <nav className='py-10 mb-12 flex justify-between md:px-20 lg:px-40'>
               <h1 className='text-2xl font-LouisBold font-bold dark:text-white' data-test='welcome' >Professional Portfolio</h1>
               <ul className='flex items-center' data-test='topButons'>
-                <li data-test='darkThemeIcon' className='cursor-pointer  dark:text-white mt-2' onChange={() => setDarkMode(!darkMode)}>
+                <li data-test='darkThemeIcon' className='cursor-pointer  dark:text-white mt-2' >
                   <label className="relative inline-flex items-center cursor-pointer">
                     <input type="checkbox" value="" className="sr-only peer" />
                     <div className="w-14 h-7 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5  after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
@@ -59,7 +59,7 @@ function Home() {
           <div className='max-w-screen-lg  mx-auto flex flex-col justify-center w-full h-full'><p className='my-1 flex justify-center text-5xl font-LouisLight font-bold dark:text-white border-b-2' id="aboutMe">About Me</p></div>
           <section><AboutMe /></section>
         </main>
-      </div> </BrowserRouter>
+      </div> 
   )
 }
 
